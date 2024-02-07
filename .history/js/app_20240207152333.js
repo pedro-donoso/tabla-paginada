@@ -51,7 +51,7 @@ window.pasarPagina = (pagina) => {
   desde = limite * pagina;
 
   if (desde <= info.length) {
-    modificarProductos()
+    modificarProductos
   }
 };
 
@@ -59,7 +59,7 @@ window.siguientePagina = () => {
   if (paginaActiva < paginas) {
     desde += 5;
     paginaActiva++;
-    modificarProductos();
+    
   }
 };
 

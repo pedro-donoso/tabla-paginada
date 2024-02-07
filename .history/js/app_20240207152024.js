@@ -33,34 +33,26 @@ const cargarItemPaginacion = () => {
   for (let index = 0; index < paginas; index++) {
     const item = document.createElement("li");
     item.classList = `page-item`;
-    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${
-      index + 1
-    }</button>`;
+    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${index + 1}</button>`;
     item.innerHTML = enlace;
     document.querySelector("#items").append(item);
   }
 };
 
-const modificarProductos =()=>{
+window.pasarPagina = (pagina) => {
+  paginaActiva = pagina + 1
+  desde = limite * pagina
+
+  if(desde <=info.length){
     arreglo = info.slice(desde, limite * paginaActiva);
-    cargarProductos();
+    cargarProductos()
+  }
+};
+
+window.siguientePagina = ()=>{
+    if(paginaActiva < paginas)
 }
 
-window.pasarPagina = (pagina) => {
-  paginaActiva = pagina + 1;
-  desde = limite * pagina;
 
-  if (desde <= info.length) {
-    modificarProductos()
-  }
-};
-
-window.siguientePagina = () => {
-  if (paginaActiva < paginas) {
-    desde += 5;
-    paginaActiva++;
-    modificarProductos();
-  }
-};
 
 cargarProductos();
