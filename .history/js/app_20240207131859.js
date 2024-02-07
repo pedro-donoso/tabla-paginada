@@ -2,6 +2,8 @@ import { traerData } from "./api-fetch.js";
 
 const info = await traerData();
 
+console.log(info);
+
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
 // Variables para la paginación
@@ -12,11 +14,13 @@ let paginaActiva = 1;
 
 let arreglo = info.slice(desde, limite);
 
+console.log(arreglo);
+
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
     const filaTabla = document.createElement("tr");
-    filaTabla.setAttribute("key", producto.id);
+    filaTabla.setAttribute("key, producto.id");
     const celda = `
     <th scope="row">${producto.id}</th>
     <td>${producto.title}</td>
