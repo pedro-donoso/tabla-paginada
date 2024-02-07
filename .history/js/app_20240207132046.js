@@ -2,6 +2,8 @@ import { traerData } from "./api-fetch.js";
 
 const info = await traerData();
 
+console.log(info);
+
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
 // Variables para la paginación
@@ -11,6 +13,8 @@ let paginas = info.length / limite;
 let paginaActiva = 1;
 
 let arreglo = info.slice(desde, limite);
+
+console.log(arreglo);
 
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
