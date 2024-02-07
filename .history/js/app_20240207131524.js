@@ -26,7 +26,6 @@ const cargarProductos = () => {
     <td>${product.title}</td>
     `
     filaTabla.innerHTML=celda
-    cuerpoTabla.append(filaTabla)
   });
 };
 

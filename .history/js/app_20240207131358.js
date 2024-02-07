@@ -24,10 +24,6 @@ const cargarProductos = () => {
     const celda = `
     <th scope="row">${producto.id}</th>
     <td>${product.title}</td>
-    `
-    filaTabla.innerHTML=celda
-    cuerpoTabla.append(filaTabla)
+    `;
   });
 };
-
-console.log(cargarProductos);

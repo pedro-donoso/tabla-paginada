@@ -23,11 +23,7 @@ const cargarProductos = () => {
     filaTabla.setAttribute("key, producto.id");
     const celda = `
     <th scope="row">${producto.id}</th>
-    <td>${product.title}</td>
-    `
-    filaTabla.innerHTML=celda
-    cuerpoTabla.append(filaTabla)
+    <td>$</td>
+    `;
   });
 };
-
-console.log(cargarProductos);

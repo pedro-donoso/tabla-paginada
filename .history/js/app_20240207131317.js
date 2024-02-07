@@ -22,12 +22,8 @@ const cargarProductos = () => {
     const filaTabla = document.createElement("tr");
     filaTabla.setAttribute("key, producto.id");
     const celda = `
-    <th scope="row">${producto.id}</th>
-    <td>${product.title}</td>
-    `
-    filaTabla.innerHTML=celda
-    cuerpoTabla.append(filaTabla)
+    <th scope="row">${producto}</th>
+    <td>Mark</td>
+    `;
   });
 };
-
-console.log(cargarProductos);
