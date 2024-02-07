@@ -32,7 +32,7 @@ const cargarItemPaginacion = () => {
 
   for (let index = 0; index < paginas; index++) {
     const item = document.createElement("li");
-    item.classList = `page-item ${paginaActiva==index+1 ?"active":'' }`;
+    item.classList = `page-item`;
     const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${
       index + 1
     }</button>`;
@@ -64,9 +64,9 @@ window.siguientePagina = () => {
 };
 
 window.anteriorPagina = () => {
-  if (desde > 0) {
-    desde -= 5;
-    paginaActiva--;
+  if (desde  paginas) {
+    desde += 5;
+    paginaActiva++;
     modificarProductos();
   }
 };
