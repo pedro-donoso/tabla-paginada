@@ -39,7 +39,7 @@ const cargarItemPaginacion = () => {
   }
 };
 
-window.pasarPagina = (pagina) => {
+window pasarPagina = (pagina) => {
   paginaActiva = pagina + 1
   desde = limite * pagina
 
