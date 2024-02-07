@@ -41,17 +41,15 @@ const cargarItemPaginacion = () => {
   }
 };
 
-const modificarProductos =()=>{
-    arreglo = info.slice(desde, limite * paginaActiva);
-    cargarProductos();
-}
+const modificarProductos =()=>
 
 window.pasarPagina = (pagina) => {
   paginaActiva = pagina + 1;
   desde = limite * pagina;
 
   if (desde <= info.length) {
-    modificarProductos()
+    arreglo = info.slice(desde, limite * paginaActiva);
+    cargarProductos();
   }
 };
 
@@ -59,7 +57,8 @@ window.siguientePagina = () => {
   if (paginaActiva < paginas) {
     desde += 5;
     paginaActiva++;
-    modificarProductos();
+    arreglo = info.slice(desde, limite * paginaActiva);
+    cargarProductos();
   }
 };
 

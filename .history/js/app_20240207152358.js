@@ -59,7 +59,7 @@ window.siguientePagina = () => {
   if (paginaActiva < paginas) {
     desde += 5;
     paginaActiva++;
-    modificarProductos();
+    modificarProductos
   }
 };
 
