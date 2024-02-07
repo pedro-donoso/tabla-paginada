@@ -10,4 +10,3 @@ export const traerData = async () => {
     return error;
   }
 };
-

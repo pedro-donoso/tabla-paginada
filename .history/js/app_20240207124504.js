@@ -1,4 +1,4 @@
-import {traerData} from './api-fetch.js'
+import { traerData } from './'
 
 const info = await traerData();
 

@@ -11,3 +11,4 @@ export const traerData = async () => {
   }
 };
 
+ console.log(data);
