@@ -18,7 +18,7 @@
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <div class="items" class="d-flex"></div>
+                            <div id="items" class="d-flex"></div>
                             <li class="page-item">
                                 <button class="page-link">
                                     <span aria-hidden="true">&raquo;</span>
