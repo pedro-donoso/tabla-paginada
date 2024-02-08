@@ -81,5 +81,6 @@ const info = await traerData();
 
 console.log(info);
 ```
+![data](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/87450758-4461-4f62-b8b3-3a9290315436)
 
 
