@@ -4,9 +4,9 @@ console.log(info);
 
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
-// SECCIÓN PAGINACIÓN
+// SECCION PAGINACION
 
-// VARIABLES DE LA PAGINACIÓN
+VARIABLES DE LA PAGINACIÓN
 let limite = 5;
 let desde = 0;
 let paginas = info.length / limite;
@@ -57,9 +57,9 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
+// FIN SECCION PAGINACION
 
-// SECCIÓN PRODUCTOS
+// SECCION PRODUCTOS
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
@@ -93,4 +93,4 @@ const cargarProductos = () => {
 };
 
 cargarProductos();
-// FIN SECCIÓN PRODUCTOS
+// FIN SECCION PRODUCTOS

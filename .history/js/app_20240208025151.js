@@ -4,9 +4,7 @@ console.log(info);
 
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
-// SECCIÓN PAGINACIÓN
-
-// VARIABLES DE LA PAGINACIÓN
+// Variables para la paginación
 let limite = 5;
 let desde = 0;
 let paginas = info.length / limite;
@@ -19,7 +17,7 @@ const cargarItemPaginacion = () => {
 
   for (let index = 0; index < paginas; index++) {
     const item = document.createElement("li");
-    item.classList = `page-item ${paginaActiva == index + 1 ? "active" : ""}`;
+    item.classList = `page-item ${paginaActiva==index+1 ?"active":'' }`;
     const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${
       index + 1
     }</button>`;
@@ -28,17 +26,17 @@ const cargarItemPaginacion = () => {
   }
 };
 
-const modificarProductos = () => {
-  arreglo = info.slice(desde, limite * paginaActiva);
-  cargarProductos();
-};
+const modificarProductos =()=>{
+    arreglo = info.slice(desde, limite * paginaActiva);
+    cargarProductos();
+}
 
 window.pasarPagina = (pagina) => {
   paginaActiva = pagina + 1;
   desde = limite * pagina;
 
   if (desde <= info.length) {
-    modificarProductos();
+    modificarProductos()
   }
 };
 
@@ -57,9 +55,6 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
-
-// SECCIÓN PRODUCTOS
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
@@ -82,8 +77,7 @@ const cargarProductos = () => {
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla
-    filaTabla.innerHTML =
-      celdaId + celdaTitulo + celdaCategoria + celdaDescripcion + celdaPrecio;
+    filaTabla.innerHTML = celdaId + celdaTitulo + celdaCategoria + celdaDescripcion + celdaPrecio;
     filaTabla.appendChild(celdaImagen);
 
     // Agregamos la fila de la tabla al cuerpo de la tabla
@@ -92,5 +86,10 @@ const cargarProductos = () => {
   cargarItemPaginacion();
 };
 
+
+
+
+
+
+
 cargarProductos();
-// FIN SECCIÓN PRODUCTOS

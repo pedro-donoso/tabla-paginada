@@ -57,9 +57,9 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
+// FIN SECCION PAGINACION
 
-// SECCIÓN PRODUCTOS
+// SECCION PRODUCTOS
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
@@ -93,4 +93,4 @@ const cargarProductos = () => {
 };
 
 cargarProductos();
-// FIN SECCIÓN PRODUCTOS
+// FIN SECCION PRODUCTOS
