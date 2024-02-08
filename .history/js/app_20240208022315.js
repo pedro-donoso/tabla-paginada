@@ -25,8 +25,8 @@ const cargarProductos = () => {
     imagen.src = producto.image; // La URL de la imagen se proporciona en la respuesta de la API
     imagen.alt = producto.title; // Establecemos el atributo alt para accesibilidad
     imagen.width = "100"; // Establecemos el ancho de la imagen
-
-    // Creamos celdas de tabla con caracteristicas del producto
+    
+    // Creamos celdas de tabla para el ID del producto, el título del producto y la imagen del producto
     const celdaId = `<th scope="row">${producto.id}</th>`;
     const celdaTitulo = `<td>${producto.title}</td>`;
     const celdaCategoria = `<td>${producto.category}</td>`;
