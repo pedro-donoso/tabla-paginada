@@ -93,4 +93,4 @@ const cargarProductos = () => {
 };
 
 cargarProductos();
-// FIN SECCIÓN PRODUCTOS
+// FIN SECCION PRODUCTOS
