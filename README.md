@@ -5,48 +5,9 @@
 ### 1. Creo archivo index.html con template html de Bootstrap
 
 ### 2. Creo estructura de Tabla y Paginación
-```
-<div class="container">
-        <div class="row my-5">
-            <div class="col text-center">
-                <h1>Tabla de productos</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8 offset-2">
-                <div class="d-flex justify-content-end">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <div id="items" class="d-flex"></div>
-                            <li class="page-item">
-                                <button class="page-link">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
 
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Producto</th>
-                        </tr>
-                    </thead>
-                    <tbody id="cuerpo-tabla">
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-```
+![cuatro](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/e5995799-553b-4f17-b673-327939afd8a7)
+
 ### 3. Creo carpeta js con archivos:
 
 1. js
@@ -59,28 +20,16 @@
 <script type="module" src="./js/app.js"></script>
 ```
 ### 5. En el archivo api-fetch.js llamo a la url fake de productos e importo la data:
-```
-const url = "https://fakestoreapi.com/products";
 
-export const traerData = async () => {
-  try {
-    const resp = await fetch(url);
-    const data = await resp.json();
+![tres](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/a1441380-9e4e-45b0-a61d-845dba341a16)
 
-    return data;
-  } catch (error) {
-    return error;
-  }
-};
-```
+
 ### 6. En el archivo app.js recibo la data, la reviso por consola:
-```
-import {traerData} from './api-fetch.js'
 
-const info = await traerData();
+![dos](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/baa0d64a-9997-4d43-9c1f-6c1e0efb6bd8)
 
-console.log(info);
-```
+
+
 ![data](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/87450758-4461-4f62-b8b3-3a9290315436)
 
 ### 7. Traigo elemento cuerpo de la tabla desde index.html mediante su ID:
@@ -88,4 +37,10 @@ console.log(info);
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 ```
 
-####
+### 8. Creo las variables de paginaciòn:
+![Captura desde 2024-02-08 15-35-47](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/33fbd563-4f19-459b-b8d7-2eade7bbd99b)
+
+
+### 9. Creo constante cargarProductos
+
+![uno](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/febb9899-9208-49b1-95eb-cd9dff2efdbd)
