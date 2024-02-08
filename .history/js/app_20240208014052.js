@@ -31,12 +31,12 @@ const cargarProductos = () => {
     const celdaTitulo = `<td>${producto.title}</td>`;
     const celdaCategoria = `<td>${producto.category}</td>`;
     const celdaDescripcion = `<td>${producto.description}</td>`;
-    const celdaPrecio = `<td>$${producto.price}</td>`;
+    const celdaP = `<td>${producto.description}</td>`;
     const celdaImagen = document.createElement("td");
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla
-    filaTabla.innerHTML = celdaId + celdaTitulo + celdaCategoria + celdaDescripcion + celdaPrecio;
+    filaTabla.innerHTML = celdaId + celdaTitulo + celdaCategoria + celdaDescripcion;
     filaTabla.appendChild(celdaImagen);
 
     // Agregamos la fila de la tabla al cuerpo de la tabla

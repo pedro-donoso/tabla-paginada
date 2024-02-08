@@ -29,10 +29,11 @@ const cargarProductos = () => {
     // Creamos celdas de tabla para el ID del producto, el título del producto y la imagen del producto
     const celdaId = `<th scope="row">${producto.id}</th>`;
     const celdaTitulo = `<td>${producto.title}</td>`;
+    const celdaImagen = document.createElement("td");
     const celdaCategoria = `<td>${producto.category}</td>`;
     const celdaDescripcion = `<td>${producto.description}</td>`;
     const celdaPrecio = `<td>$${producto.price}</td>`;
-    const celdaImagen = document.createElement("td");
+    
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla

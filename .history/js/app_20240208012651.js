@@ -27,16 +27,14 @@ const cargarProductos = () => {
     imagen.width = "100"; // Establecemos el ancho de la imagen en 100 píxeles (puedes ajustar el valor según sea necesario)
 
     // Creamos celdas de tabla para el ID del producto, el título del producto y la imagen del producto
+    
     const celdaId = `<th scope="row">${producto.id}</th>`;
     const celdaTitulo = `<td>${producto.title}</td>`;
-    const celdaCategoria = `<td>${producto.category}</td>`;
-    const celdaDescripcion = `<td>${producto.description}</td>`;
-    const celdaPrecio = `<td>$${producto.price}</td>`;
     const celdaImagen = document.createElement("td");
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla
-    filaTabla.innerHTML = celdaId + celdaTitulo + celdaCategoria + celdaDescripcion + celdaPrecio;
+    filaTabla.innerHTML = celdaId + celdaTitulo;
     filaTabla.appendChild(celdaImagen);
 
     // Agregamos la fila de la tabla al cuerpo de la tabla
@@ -44,7 +42,6 @@ const cargarProductos = () => {
   });
   cargarItemPaginacion();
 };
-
 
 const cargarItemPaginacion = () => {
   document.querySelector("#items").innerHTML = "";
