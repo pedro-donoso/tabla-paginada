@@ -31,7 +31,7 @@ const cargarProductos = () => {
     const celdaTitulo = `<td>${producto.title}</td>`;
     const celdaCategoria = `<td>${producto.category}</td>`;
     const celdaDescripcion = `<td>${producto.description}</td>`;
-    const celdaPrecio = `<td>$${producto.price}</td>`;
+    const celdaPrecio = `<td>${producto.price}</td>`;
     const celdaImagen = document.createElement("td");
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
 
