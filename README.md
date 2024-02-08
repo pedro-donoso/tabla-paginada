@@ -73,7 +73,7 @@ export const traerData = async () => {
   }
 };
 ```
-### 6. En el archivo app.js recibo la data:
+### 6. En el archivo app.js recibo la data, la reviso por consola:
 ```
 import {traerData} from './api-fetch.js'
 
