@@ -61,7 +61,7 @@ window.anteriorPagina = () => {
 };
 // FIN SECCIÓN PAGINACIÓN
 
-// SECCIÓN PRODUCTOS
+// SECCIÓN PRODUCTO
 const cargarProductos = () => {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
