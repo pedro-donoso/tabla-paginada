@@ -42,5 +42,5 @@ const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
 
 ### 9. Creo constante cargarProductos
+![Captura de pantalla de 2024-02-09 12-09-23](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/b3b26579-d177-48ec-b6d8-4b7643574d75)
 
-![uno](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/febb9899-9208-49b1-95eb-cd9dff2efdbd)
