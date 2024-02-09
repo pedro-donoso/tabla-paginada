@@ -37,7 +37,7 @@
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 ```
 
-### 8. Creo las variables de paginaciòn:
+### 8. Creo las variables de paginación
 ![Captura desde 2024-02-08 15-35-47](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/33fbd563-4f19-459b-b8d7-2eade7bbd99b)
 
 
