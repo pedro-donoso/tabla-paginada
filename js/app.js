@@ -14,6 +14,8 @@ let paginaActiva = 1;
 
 let arreglo = info.slice(desde, limite);
 
+console.log(arreglo);
+
 const cargarItemPaginacion = () => {
   document.querySelector("#items").innerHTML = "";
 
