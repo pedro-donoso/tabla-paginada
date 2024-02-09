@@ -4,7 +4,7 @@ console.log(info);
 
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
-// SECCIÓN PAGINACIÓN
+// SECCIÓN PAGINAS
 
 // VARIABLES DE LA PAGINACIÓN
 let limite = 5;
