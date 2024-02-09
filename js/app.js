@@ -58,7 +58,7 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
+// FIN SECCIÓN de PAGINACIÓN
 
 // SECCIÓN PRODUCTOS
 const cargarProductos = () => {
