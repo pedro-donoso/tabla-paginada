@@ -37,10 +37,12 @@
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 ```
 
-### 8. Creo las variables de paginación
+### 8. Creo las variables de paginación:
 ![Captura desde 2024-02-08 15-35-47](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/33fbd563-4f19-459b-b8d7-2eade7bbd99b)
 
 
-### 9. Creo constante cargarProductos
+### 9. Creo constante cargarProductos:
 ![Captura de pantalla de 2024-02-09 12-09-23](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/b3b26579-d177-48ec-b6d8-4b7643574d75)
 
+### 10. Creo constante cargarItemPaginacion: 
+![item](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/d7aed9e4-0450-45b0-9bc1-efa95247607d)
