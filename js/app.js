@@ -22,9 +22,8 @@ const cargarItemPaginacion = () => {
   for (let index = 0; index < paginas; index++) {
     const item = document.createElement("li");
     item.classList = `page-item ${paginaActiva == index + 1 ? "active" : ""}`;
-    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${
-      index + 1
-    }</button>`;
+    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${index + 1
+      }</button>`;
     item.innerHTML = enlace;
     document.querySelector("#items").append(item);
   }
@@ -59,7 +58,7 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
+// FIN SECCIÓN de PAGINACIÓN
 
 // SECCIÓN PRODUCTOS
 const cargarProductos = () => {
