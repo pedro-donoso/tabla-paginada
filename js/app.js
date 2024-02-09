@@ -4,7 +4,7 @@ console.log(info);
 
 const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
-// SECCIÓN PAGINACIÓN
+// SECCIÓN PAGINAS
 
 // VARIABLES DE LA PAGINACIÓN
 let limite = 5;
@@ -13,6 +13,8 @@ let paginas = info.length / limite;
 let paginaActiva = 1;
 
 let arreglo = info.slice(desde, limite);
+
+console.log(arreglo);
 
 const cargarItemPaginacion = () => {
   document.querySelector("#items").innerHTML = "";
