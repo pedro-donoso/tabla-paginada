@@ -34,6 +34,7 @@ const modificarProductos = () => {
   cargarProductos();
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.pasarPagina = (pagina) => {
   paginaActiva = pagina + 1;
   desde = limite * pagina;
@@ -43,6 +44,7 @@ window.pasarPagina = (pagina) => {
   }
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.siguientePagina = () => {
   if (paginaActiva < paginas) {
     desde += 5;
@@ -51,6 +53,7 @@ window.siguientePagina = () => {
   }
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.anteriorPagina = () => {
   if (desde > 0) {
     desde -= 5;
@@ -61,7 +64,7 @@ window.anteriorPagina = () => {
 // FIN SECCIÓN de PAGINACIÓN
 
 // SECCIÓN PRODUCTOS
-const cargarProductos = () => {
+function cargarProductos() {
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
     const filaTabla = document.createElement("tr");
@@ -73,6 +76,7 @@ const cargarProductos = () => {
     imagen.alt = producto.title; // Establecemos el atributo alt para accesibilidad
     imagen.width = "100"; // Establecemos el ancho de la imagen
 
+
     // Creamos celdas de tabla con caracteristicas del producto
     const celdaId = `<th scope="row">${producto.id}</th>`;
     const celdaTitulo = `<td>${producto.title}</td>`;
@@ -81,6 +85,7 @@ const cargarProductos = () => {
     const celdaPrecio = `<td>$${producto.price}</td>`;
     const celdaImagen = document.createElement("td");
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
+
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla
     filaTabla.innerHTML =
@@ -91,7 +96,7 @@ const cargarProductos = () => {
     cuerpoTabla.appendChild(filaTabla);
   });
   cargarItemPaginacion();
-};
+}
 
 cargarProductos();
 // FIN SECCIÓN PRODUCTOS
