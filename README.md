@@ -4,7 +4,7 @@
 
 ### 1. Creo archivo index.html con template html de Bootstrap
 
-### 2. Creo estructura de Tabla y Paginación
+### 2. Creo estructura de Tabla y Paginación, boton onclic para cambiar de páginas:
 
 ![cuatro](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/e5995799-553b-4f17-b673-327939afd8a7)
 
