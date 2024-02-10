@@ -47,7 +47,7 @@ const cuerpoTabla = document.querySelector("#cuerpo-tabla");
 ### 10. Creo constante cargarItemPaginacion: 
 ![item](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/d7aed9e4-0450-45b0-9bc1-efa95247607d)
 
-### 11. Creo constante modificarProductos
+### 11. Creo constante modificarProductos y opciones de Paginación:
 
 ![paginas](https://github.com/pedro-donoso/tabla-paginada/assets/68760595/17ab4d19-af6f-461d-83bd-52a9c9bcaab0)
 
