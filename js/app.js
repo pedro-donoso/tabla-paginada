@@ -63,13 +63,10 @@ window.anteriorPagina = () => {
 };
 // FIN SECCIÓN de PAGINACIÓN
 
-<<<<<<< HEAD
 // SECCIÓN PRODUCTO
 const cargarProductos = () => {
-=======
 // SECCIÓN PRODUCTOS
 function cargarProductos() {
->>>>>>> develop
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
     const filaTabla = document.createElement("tr");
