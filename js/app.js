@@ -63,8 +63,6 @@ window.anteriorPagina = () => {
 };
 // FIN SECCIÓN de PAGINACIÓN
 
-// SECCIÓN PRODUCTO
-const cargarProductos = () => {
 // SECCIÓN PRODUCTOS
 function cargarProductos() {
   cuerpoTabla.innerHTML = "";
