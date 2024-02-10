@@ -22,9 +22,8 @@ const cargarItemPaginacion = () => {
   for (let index = 0; index < paginas; index++) {
     const item = document.createElement("li");
     item.classList = `page-item ${paginaActiva == index + 1 ? "active" : ""}`;
-    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${
-      index + 1
-    }</button>`;
+    const enlace = `<button class="page-link" onclick="pasarPagina(${index})">${index + 1
+      }</button>`;
     item.innerHTML = enlace;
     document.querySelector("#items").append(item);
   }
@@ -35,6 +34,7 @@ const modificarProductos = () => {
   cargarProductos();
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.pasarPagina = (pagina) => {
   paginaActiva = pagina + 1;
   desde = limite * pagina;
@@ -44,6 +44,7 @@ window.pasarPagina = (pagina) => {
   }
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.siguientePagina = () => {
   if (paginaActiva < paginas) {
     desde += 5;
@@ -52,6 +53,7 @@ window.siguientePagina = () => {
   }
 };
 
+// window para que sea un objeto global, debido que el script del index es MODULO
 window.anteriorPagina = () => {
   if (desde > 0) {
     desde -= 5;
@@ -59,10 +61,15 @@ window.anteriorPagina = () => {
     modificarProductos();
   }
 };
-// FIN SECCIÓN PAGINACIÓN
+// FIN SECCIÓN de PAGINACIÓN
 
+<<<<<<< HEAD
 // SECCIÓN PRODUCTO
 const cargarProductos = () => {
+=======
+// SECCIÓN PRODUCTOS
+function cargarProductos() {
+>>>>>>> develop
   cuerpoTabla.innerHTML = "";
   arreglo.map((producto) => {
     const filaTabla = document.createElement("tr");
@@ -74,6 +81,7 @@ const cargarProductos = () => {
     imagen.alt = producto.title; // Establecemos el atributo alt para accesibilidad
     imagen.width = "100"; // Establecemos el ancho de la imagen
 
+
     // Creamos celdas de tabla con caracteristicas del producto
     const celdaId = `<th scope="row">${producto.id}</th>`;
     const celdaTitulo = `<td>${producto.title}</td>`;
@@ -82,6 +90,7 @@ const cargarProductos = () => {
     const celdaPrecio = `<td>$${producto.price}</td>`;
     const celdaImagen = document.createElement("td");
     celdaImagen.appendChild(imagen); // Agregamos el elemento <img> a la celda
+
 
     // Agregamos todas las celdas de la tabla a la fila de la tabla
     filaTabla.innerHTML =
@@ -92,7 +101,7 @@ const cargarProductos = () => {
     cuerpoTabla.appendChild(filaTabla);
   });
   cargarItemPaginacion();
-};
+}
 
 cargarProductos();
 // FIN SECCIÓN PRODUCTOS
